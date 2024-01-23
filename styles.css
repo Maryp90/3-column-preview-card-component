@@ -1,0 +1,28 @@
+.container {
+    width: 920px;
+    height: 500px;
+    border-radius: 8px;
+    background: #E28625;
+    color: white;
+}
+
+.icon {
+    width: 63.986px;
+    height: 40px;
+    margin-top: 48px;
+    align-items: left;
+}
+
+h2 {
+    color: #F2F2F2;
+    font-family: "Big Shoulders Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
