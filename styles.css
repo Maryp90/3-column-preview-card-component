@@ -1,19 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Lexend+Deca&display=swap');
+
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
 .container {
     width: 920px;
-    height: 500px;
-    border-radius: 8px;
-    background: #E28625;
     color: white;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .icon {
-    width: 63.986px;
-    height: 40px;
     margin-top: 48px;
-    align-items: left;
+    padding-left: 48px;
+    
 }
 
-h2 {
+h1 {
     color: #F2F2F2;
     font-family: "Big Shoulders Display";
     font-size: 40px;
@@ -21,8 +33,172 @@ h2 {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    padding-left: 48px;
+}
+
+.column-one{
+  background-color: #e28525;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.column-two{
+  background-color: #006971;
+}
+
+.column-three{
+  background-color: #004140;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.description {
+  width: 212px;
+  color: #F2F2F2;
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 0.75;
+  padding: 0 47.5px 47.5px 47.5px;
+}
+
+.button-container{
+  padding: 0 48px 48px 48px;
+}
+
+.button-container > button {
+  font-family: "Lexend Deca";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  width: 146px;
+  height: 48px;
+  border-radius: 25px;
+  background: #F2F2F2;
+  border: none;
+}
+
+.button-container.first > button:hover {
+  background-color: #e28525;
+  border: 2px solid #F2F2F2;
+  color: #F2F2F2;
+  cursor: pointer;
+}
+
+.button-container.second > button:hover {
+  background-color: #006971;
+  border: 2px solid #F2F2F2;
+  color: #F2F2F2;
+  cursor: pointer;
+}
+
+.button-container.third > button:hover {
+  background-color: #004140;
+  border: 2px solid #F2F2F2;
+  color: #F2F2F2;
+  cursor: pointer;
+}
+
+.attribution { 
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
 }
 
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+FLEX
+.flex {
+  flex: 1;
+  -ms-flex: 1;
+}
+
+.row {
+  display: flex;
+  display: -webkit-flex; 
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+
+.column {
+  display: flex;
+  display: -webkit-flex; 
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+}
+
+.start-center {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.start-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.start-end {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.center-start {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.center-end {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.end-center {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.space-around-start {
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.space-around-center {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.space-around-end {
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.space-between-center {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space-between-start {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.space-between-end {
+  justify-content: space-between;
+  align-items: flex-end;
+}
